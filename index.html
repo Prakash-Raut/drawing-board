@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawing Board</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Drawing Board</h1>
+    <p>Draw something on the canvas below:</p>
+
+    <div id="toolbar">
+      <button class="toolItem" id="pencil">Pencil</button>
+      <button class="toolItem" id="eraser">Eraser</button>
+      <input class="toolItem" type="color" id="color" value="#000000" />
+      <input class="toolItem" type="range" id="brushSize" min="1" max="50" value="" />
+      <button class="toolItem" id="clear">Clear</button>
+      <button class="toolItem" id="undo">Undo</button>
+      <button class="toolItem" id="redo">Redo</button>
+      <button class="toolItem" id="save">Save</button>
+    </div>
+
+    <div class="container">
+      <canvas id="canvas" width="500" height="500">
+
+      </canvas>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
